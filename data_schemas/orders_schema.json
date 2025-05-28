@@ -1,0 +1,12 @@
+{
+  "table_name": "orders",
+  "fields": [
+    {"name": "order_id", "type": "uuid"},
+    {"name": "order_date", "type": "date"},
+    {"name": "customer_name", "type": "name"},
+    {"name": "location", "type": "city"},
+    {"name": "sku", "type": "custom", "format": "SKU-####"},
+    {"name": "quantity", "type": "int", "min": 1, "max": 100},
+    {"name": "status", "type": "enum", "values": ["PENDING", "SHIPPED", "DELIVERED", "CANCELLED"]}
+  ]
+}
